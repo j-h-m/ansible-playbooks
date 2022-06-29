@@ -1,0 +1,9 @@
+---
+ - name: check and install emacs if not present
+   hosts: rhel
+   tasks:
+    - name: install latest version of emacs
+      become: true
+      apt:
+        name: emacs
+        state: latest
