@@ -3,7 +3,6 @@
    hosts: rhel
    tasks:
     - name: install latest version of emacs
-      become: true
-      apt:
+      yum:
         name: emacs
         state: latest
