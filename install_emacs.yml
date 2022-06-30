@@ -1,6 +1,6 @@
 ---
  - name: check and install emacs if not present
-   hosts: any
+   hosts: rhel
    tasks:
     - name: install latest version of emacs
       become: true
